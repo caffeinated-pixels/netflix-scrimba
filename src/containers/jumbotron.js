@@ -19,3 +19,5 @@ export function JumbotronContainer() {
     </Jumbotron.Container>
   )
 }
+
+// src & alt are props that get passed down to styled.img via {...restProps}
