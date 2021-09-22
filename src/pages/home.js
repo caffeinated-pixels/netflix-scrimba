@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <>
       <HeaderContainer>
-        <OptForm>
-          <Feature>
-            <Feature.Title>
-              Unlimited films, TV programmes and more.
-            </Feature.Title>
-            <Feature.SubTitle>
-              Watch anywhere. Cancel at any time.
-            </Feature.SubTitle>
+        <Feature>
+          <Feature.Title>
+            Unlimited films, TV programmes and more.
+          </Feature.Title>
+          <Feature.SubTitle>
+            Watch anywhere. Cancel at any time.
+          </Feature.SubTitle>
+          <OptForm>
             <OptForm.Input placeholder="Email Address" />
             <OptForm.Button>Try it now</OptForm.Button>
             <OptForm.Break />
@@ -24,8 +24,8 @@ export default function Home() {
               Ready to watch? Enter your email to create or restart your
               membership.
             </OptForm.Text>
-          </Feature>
-        </OptForm>
+          </OptForm>
+        </Feature>
       </HeaderContainer>
 
       <JumbotronContainer />
