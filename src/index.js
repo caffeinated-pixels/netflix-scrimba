@@ -2,11 +2,26 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './app'
 import { GlobalStyles } from './global-styles'
+import { FirebaseContext } from './context/firebase'
+
+const config = {
+  apiKey: '', // will need to hide this
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: ''
+}
+
+const firebase = window.firebase.initializeApp(config)
 
 ReactDOM.render(
   <>
-    <GlobalStyles />
-    <App />
+    <FirebaseContext.Provider value={{ firebase: window.firebase }}>
+      <GlobalStyles />
+      <App />
+    </FirebaseContext.Provider>
   </>,
   document.getElementById('root')
 )
