@@ -6,13 +6,13 @@ import { FirebaseContext } from './context/firebase'
 
 // using KH's config temporarily; need to find out where he gets databaseURL from!
 const config = {
-  apiKey: 'AIzaSyDAU60M2FDHNsYt9uGMpRezw3FGVIX6Jrs',
-  authDomain: 'netflix-c8ae9.firebaseapp.com',
-  databaseURL: 'https://netflix-c8ae9.firebaseio.com',
-  projectId: 'netflix-c8ae9',
-  storageBucket: 'netflix-c8ae9.appspot.com',
-  messagingSenderId: '590575805931',
-  appId: '1:590575805931:web:f809092b6cd55306fa25ae'
+  apiKey: 'AIzaSyBpBnMi4P5d20UGg6FoIEM1pkT-94VK7Fo',
+  authDomain: 'caffeinated-netflix.firebaseapp.com',
+  databaseURL: 'https://caffeinated-netflix.firebaseio.com',
+  projectId: 'caffeinated-netflix',
+  storageBucket: 'caffeinated-netflix.appspot.com',
+  messagingSenderId: '324836489806',
+  appId: '1:324836489806:web:97c67b7299bf11cf92211f'
 }
 
 // const firebase = window.firebase.initializeApp(config)
