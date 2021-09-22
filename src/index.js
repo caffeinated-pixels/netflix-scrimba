@@ -4,17 +4,18 @@ import App from './app'
 import { GlobalStyles } from './global-styles'
 import { FirebaseContext } from './context/firebase'
 
+// using KH's config temporarily; need to find out where he gets databaseURL from!
 const config = {
-  apiKey: '', // will need to hide this
-  authDomain: '',
-  databaseURL: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: ''
+  apiKey: 'AIzaSyDAU60M2FDHNsYt9uGMpRezw3FGVIX6Jrs',
+  authDomain: 'netflix-c8ae9.firebaseapp.com',
+  databaseURL: 'https://netflix-c8ae9.firebaseio.com',
+  projectId: 'netflix-c8ae9',
+  storageBucket: 'netflix-c8ae9.appspot.com',
+  messagingSenderId: '590575805931',
+  appId: '1:590575805931:web:f809092b6cd55306fa25ae'
 }
 
-const firebase = window.firebase.initializeApp(config)
+// const firebase = window.firebase.initializeApp(config)
 
 ReactDOM.render(
   <>
