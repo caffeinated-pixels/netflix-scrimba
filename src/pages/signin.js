@@ -7,6 +7,10 @@ export default function Signin() {
   const [emailAddress, setEmailAddress] = useState('')
   const [password, setPassword] = useState('')
 
+  const isInvalid = (password === '') | (emailAddress === '')
+  // disable submit button for empty input
+  // NOTE: add full email address validation?
+
   const handleSignin = event => {
     event.preventDefault()
 
@@ -33,7 +37,7 @@ export default function Signin() {
             placeholder="Password"
             onChange={({ target }) => setPassword(target.value)}
           />
-          <Form.Submit disabled={false} type="submit">
+          <Form.Submit disabled={isInvalid} type="submit">
             Sign In
           </Form.Submit>
 
