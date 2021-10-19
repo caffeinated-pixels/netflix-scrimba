@@ -12,10 +12,11 @@ const config = {
   projectId: 'caffeinated-netflix',
   storageBucket: 'caffeinated-netflix.appspot.com',
   messagingSenderId: '324836489806',
-  appId: '1:324836489806:web:97c67b7299bf11cf92211f'
+  appId: '1:324836489806:web:97c67b7299bf11cf92211f',
 }
 
-// const firebase = window.firebase.initializeApp(config)
+// do we to save this to a variable or can we just run?
+const firebase = window.firebase.initializeApp(config)
 
 ReactDOM.render(
   <>
