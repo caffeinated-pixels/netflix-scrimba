@@ -10,9 +10,9 @@ export default function Signin() {
 
   const isInvalid = password === '' || emailAddress === ''
   // disables submit button for empty input; use required attr instead???
-  // NOTE: add full email address validation?
+  // TODO: add full email address validation (Regex)?
 
-  const handleSignin = event => {
+  const handleSignin = (event) => {
     event.preventDefault()
 
     // call in here to firebase to authenticate the user

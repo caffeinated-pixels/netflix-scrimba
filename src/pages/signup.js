@@ -12,9 +12,9 @@ export default function Signup() {
 
   const isInvalid = firstName === '' || password === '' || emailAddress === ''
   // disables submit button for empty input; use required attr instead???
-  // NOTE: add full email address validation?
+  // TODO: add full email address validation (Regex)?
 
-  const handleSignup = event => {
+  const handleSignup = (event) => {
     event.preventDefault()
   }
 
