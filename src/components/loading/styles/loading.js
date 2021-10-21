@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
+// LockBody & ReleaseBody presumably override the GlobalStyles applied in the root index file. Essentially, they are empty/invisible components that prevent the scrollbar appearing on the loading screen.
 export const LockBody = createGlobalStyle`
     body {
         overflow: hidden;

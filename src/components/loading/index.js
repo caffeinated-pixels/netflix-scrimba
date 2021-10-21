@@ -13,3 +13,5 @@ export default function Loading({ src, ...restProps }) {
 Loading.ReleaseBody = function LoadingReleaseBody() {
   return <ReleaseBody />
 }
+
+// see note in styles on LockBody and ReleaseBody

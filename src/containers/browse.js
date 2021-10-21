@@ -23,6 +23,7 @@ export function BrowseContainer() {
       setLoading(false)
     }, 3000)
   }, [user])
+  // TODO: getting an ESLint warning for this hook that recommends wrapping the initialization of 'user' in its own useMemo() Hook
 
   return profile.displayName ? (
     <>
