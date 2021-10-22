@@ -37,6 +37,7 @@ export function BrowseContainer({ slides }) {
       keys: ['data.description', 'data.title', 'data.genre'],
     })
     const results = fuse.search(searchTerm).map(({ item }) => item)
+    console.log(searchTerm, results)
 
     if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
       setSlideRows(results)
@@ -45,7 +46,7 @@ export function BrowseContainer({ slides }) {
     }
   }, [searchTerm])
 
-  // TODO: getting an ESLint warning for this hook that recommends adding category, slideRows & slides to the dependencies array
+  // TODO: getting an ESLint warning for this hook that recommends adding category, slideRows & slides to the dependencies array. The problem here is that if we add slideRows to the array, we'll create an infinite render loop. Would it be better to put this in an onChange event handler for the input element???
 
   return profile.displayName ? (
     <>
