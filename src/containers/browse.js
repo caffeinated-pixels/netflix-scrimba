@@ -37,7 +37,6 @@ export function BrowseContainer({ slides }) {
       keys: ['data.description', 'data.title', 'data.genre'],
     })
     const results = fuse.search(searchTerm).map(({ item }) => item)
-    console.log(searchTerm, results)
 
     if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
       setSlideRows(results)
