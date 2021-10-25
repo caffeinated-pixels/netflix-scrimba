@@ -30,13 +30,14 @@ export default function Signup() {
             displayName: firstName,
             photoURL: Math.floor(Math.random() * 5) + 1, // assign random profile pic (1-5)
           })
-          .then(() => {
+          .then(
+            () => history.push(ROUTES.BROWSE) // change page to browse
+          )
+          .catch((error) => {
             setEmailAddress('')
             setPassword('')
-            setError('')
-            history.push(ROUTES.BROWSE) // change page to browse
+            setError(error.message)
           })
-          .catch((error) => setError(error.message))
       )
   }
 
