@@ -4,11 +4,10 @@ import App from './app'
 import { GlobalStyles } from './global-styles'
 import { FirebaseContext } from './context/firebase'
 
-// using KH's config temporarily; need to find out where he gets databaseURL from!
 const config = {
   apiKey: 'AIzaSyBpBnMi4P5d20UGg6FoIEM1pkT-94VK7Fo',
   authDomain: 'caffeinated-netflix.firebaseapp.com',
-  databaseURL: 'https://caffeinated-netflix.firebaseio.com',
+  databaseURL: 'https://caffeinated-netflix.firebaseio.com', // is databaseURL needed?
   projectId: 'caffeinated-netflix',
   storageBucket: 'caffeinated-netflix.appspot.com',
   messagingSenderId: '324836489806',
